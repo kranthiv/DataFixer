@@ -39,7 +39,7 @@ namespace DataFixer
 
             if (bool.TrueString.Equals(configuration["GenerateReport"], StringComparison.OrdinalIgnoreCase))
             {
-                upgrader.GenerateUpgradeHtmlReport("UpgradeReport.html");
+                upgrader.GenerateUpgradeHtmlReport($"UpgradeReport-{DateTimeOffset.UtcNow:yyyyMMddHHmmss}.html");
             }
 
 
